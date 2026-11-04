@@ -1,0 +1,15 @@
+{
+  "name": "news_no_chunking_3small",
+  "enabled": true,
+  "input_corpus": "shared_data/corpus/news/clean/articles",
+  "output_folder": "shared_data/knowledge_bases/news_no_chunking_3small",
+  "chunking_method": "none",
+  "chunk_size_characters": 0,
+  "chunk_overlap_characters": 0,
+  "embedding_provider": "azure_openai",
+  "embedding_model": "text-embedding-3-small",
+  "embedding_deployment": "text-embedding-3-small",
+  "embedding_dimensions": null,
+  "vector_backend": "sqlite_vec1",
+  "search_distance": "cosine"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "daily_tourism_intelligence",
+  "enabled": true,
+  "purpose": "Daily tourism intelligence report using cleaned news articles and optional knowledge-base context.",
+  "input_corpus": "shared_data/corpus/news/clean/articles",
+  "output_folder": "shared_data/reports",
+  "report_window_hours": 24,
+  "system_prompt": "reporting/prompts/daily_tourism_system.md",
+  "user_prompt": "reporting/prompts/daily_tourism_user.md",
+  "context_strategy": "simple",
+  "knowledge_base_recipe": "news_no_chunking_3large",
+  "candidate_selector": "embedding_prototypes",
+  "candidate_selector_model": "text-embedding-3-large",
+  "candidate_selector_deployment": "text-embedding-3-large",
+  "candidate_selector_provider": "openai",
+  "candidate_selector_positive_threshold": 0.28,
+  "candidate_selector_margin_threshold": 0.03,
+  "max_iterations": 15,
+  "candidate_limit": 100,
+  "model_provider": "openai",
+  "model_name": "gpt-5",
+  "model_deployment": "gpt-5"
+}

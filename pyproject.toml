@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thesis"
+version = "0.1.0"
+description = "Beginner-friendly thesis monorepo for corpus collection, knowledge-base experiments, reporting, and exploration."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "feedparser>=6.0.11",
+  "gliner==0.2.21",
+  "matplotlib>=3.9,<4",
+  "numpy>=1.26,<2",
+  "onnxruntime>=1.19,<1.20",
+  "openai>=1.0.0",
+  "requests>=2.32.0",
+  "torch>=2.2.2,<2.3",
+  "transformers>=4.57,<5",
+]
+
+[project.scripts]
+collect = "collector.cli:main"
+build-kb = "knowledge_bases.cli:main"
+report = "reporting.cli:main"
+explore = "explorer.cli:main"
+test = "tests.run_tests:main"
+
+[tool.setuptools]
+packages = [
+  "collector",
+  "collector.feeds",
+  "collector.articles",
+  "collector.cleaning",
+  "collector.cleaning.cleaners",
+  "collector.quality",
+  "knowledge_bases",
+  "knowledge_bases.chunking",
+  "knowledge_bases.embedding",
+  "knowledge_bases.storage",
+  "knowledge_bases.retrieval",
+  "knowledge_bases.evaluation",
+  "reporting",
+  "reporting.context",
+  "reporting.strategies",
+  "explorer",
+  "explorer.webapps",
+  "explorer.webapps.corpus_inspector",
+  "tests",
+]

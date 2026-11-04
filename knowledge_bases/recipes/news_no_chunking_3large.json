@@ -1,0 +1,15 @@
+{
+  "name": "news_no_chunking_3large",
+  "enabled": true,
+  "input_corpus": "shared_data/corpus/news/clean/articles",
+  "output_folder": "shared_data/knowledge_bases/news_no_chunking_3large",
+  "chunking_method": "none",
+  "chunk_size_characters": 0,
+  "chunk_overlap_characters": 0,
+  "embedding_provider": "openai",
+  "embedding_model": "text-embedding-3-large",
+  "embedding_deployment": "text-embedding-3-large",
+  "embedding_dimensions": null,
+  "vector_backend": "sqlite_vec1",
+  "search_distance": "cosine"
+}

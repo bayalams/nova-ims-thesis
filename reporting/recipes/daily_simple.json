@@ -1,0 +1,10 @@
+{
+  "name": "daily_simple",
+  "enabled": true,
+  "purpose": "First daily report recipe that will summarize cleaned news articles without advanced RAG strategy.",
+  "input_corpus": "shared_data/corpus/news/clean/articles",
+  "context_source": "none_yet",
+  "prompt_strategy": "simple_daily_summary",
+  "report_window_hours": 24,
+  "output_folder": "shared_data/reports"
+}

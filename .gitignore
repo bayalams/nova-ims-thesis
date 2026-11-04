@@ -1,0 +1,47 @@
+# macOS metadata
+.DS_Store
+._*
+__MACOSX/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment files with secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Local compiled tools
+.local_tools/
+
+# Local implementation worktrees
+.worktrees/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Real and generated shared data
+shared_data/corpus/news/raw/links/*
+!shared_data/corpus/news/raw/links/README.md
+shared_data/corpus/news/raw/articles/*
+!shared_data/corpus/news/raw/articles/README.md
+shared_data/corpus/news/clean/articles/*
+!shared_data/corpus/news/clean/articles/README.md
+shared_data/knowledge_bases/*
+!shared_data/knowledge_bases/README.md
+shared_data/explorer/*
+!shared_data/explorer/README.md
+shared_data/quality_reports/*
+!shared_data/quality_reports/README.md
+shared_data/reports/*
+!shared_data/reports/README.md

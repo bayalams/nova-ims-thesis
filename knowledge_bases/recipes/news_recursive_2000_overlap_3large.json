@@ -1,0 +1,15 @@
+{
+  "name": "news_recursive_2000_overlap_3large",
+  "enabled": true,
+  "input_corpus": "shared_data/corpus/news/clean/articles",
+  "output_folder": "shared_data/knowledge_bases/news_recursive_2000_overlap_3large",
+  "chunking_method": "recursive",
+  "chunk_size_characters": 2000,
+  "chunk_overlap_characters": 200,
+  "embedding_provider": "azure_openai",
+  "embedding_model": "text-embedding-3-large",
+  "embedding_deployment": "text-embedding-3-large",
+  "embedding_dimensions": null,
+  "vector_backend": "sqlite_vec1",
+  "search_distance": "cosine"
+}
